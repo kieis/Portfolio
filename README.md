@@ -7,7 +7,7 @@ Rocketseat Discover: Portfolio Challenge
 ## Clone
 
 ```bash
-$ git clone https://github.com/kieis/crypto-currency
+$ git clone https://github.com/kieis/Portfolio
 ```
 
 ## Preview
