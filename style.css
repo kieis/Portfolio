@@ -60,10 +60,12 @@ p img{
 }
 
 .profile h2:nth-child(2) {
+    text-align: center;
     margin-top: 1.5rem;
 }
 
 .profile h5:last-child {
+    text-align: center;
     margin-bottom: 2rem;
 }
 
@@ -77,8 +79,8 @@ p img{
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    line-height: 0;
     font-size:small;
+    overflow-wrap: break-word;
 }
 
 /*technologys*/
@@ -132,7 +134,6 @@ p img{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /*background-color: red;*/
 }
 
 /*project*/
@@ -140,7 +141,6 @@ p img{
     display: flex;
     margin-bottom: 1rem;
     flex-basis: 49.5%;
-    height: 10rem;
     text-decoration: none;
     color: var(--text-color);
     justify-content: space-between;
@@ -152,7 +152,6 @@ p img{
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    line-height: 0;
     font-size:small;
 }
 
