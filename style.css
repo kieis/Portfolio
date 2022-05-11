@@ -3,6 +3,7 @@
 * {
     font-family: 'Merriweather Sans', sans-serif;
     margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -15,15 +16,16 @@
 body {
     background-color: var(--body-bg-color);
     color: var(--text-color);
-    margin: 2rem 2rem;
     display: flex;
     gap: 2rem;
-    height: 80vh;
+    height: 100vh;
+    min-width: 400px;
 }
 
 aside {
     display: flex;
     flex-direction: column;
+    padding: 2rem 0 2rem 2rem;
     gap: 2rem;
     flex-basis: 20%;
 }
@@ -31,8 +33,18 @@ aside {
 main {
     display: flex;
     flex-direction: column;
+    padding: 2rem 0 2rem 0;
     gap: 2rem;
     flex-basis: 80%;
+}
+
+@media (max-width: 1000px){
+    body{
+        flex-direction: column;
+    }
+    aside, main {
+        padding: 2rem;
+    }
 }
 
 /*svg color https://angel-rs.github.io/css-color-filter-generator/*/
@@ -131,16 +143,20 @@ p img{
 
 /*projects*/
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-gap: .8rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 600px){
+    .projects {
+        grid-template-columns: 1fr;
+    }
 }
 
 /*project*/
 .project {
     display: flex;
-    margin-bottom: 1rem;
-    flex-basis: 49.5%;
     text-decoration: none;
     color: var(--text-color);
     justify-content: space-between;

@@ -15,8 +15,3 @@ $ git clone https://github.com/kieis/Portfolio
 ![App Screenshot](https://i.imgur.com/RvIXYnr.png)
 
 https://portfolio-kieis.vercel.app
-
-
-## Improvements
-
-- Responsiveness
